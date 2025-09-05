@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GongSolutions.Wpf.DragDrop</RootNamespace>
+    <AssemblyName>GongSolutions.Wpf.DragDrop</AssemblyName>
+    <UseWPF>true</UseWPF>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\NET4\</OutputPath>
+    <IntermediateOutputPath>obj\Debug\NET4\</IntermediateOutputPath>
+    <DocumentationFile>bin\Debug\NET4\GongSolutions.Wpf.DragDrop.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>gong-wpf-dragdrop.pfx</AssemblyOriginatorKeyFile>
+    <OutputPath>bin\Release\NET4\</OutputPath>
+    <IntermediateOutputPath>obj\Release\NET4\</IntermediateOutputPath>
+    <DocumentationFile>bin\Release\NET4\GongSolutions.Wpf.DragDrop.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Update="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Update="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\EffectCopy.png" />
+    <Resource Include="Icons\EffectLink.png" />
+    <Resource Include="Icons\EffectMove.png" />
+    <Resource Include="Icons\EffectNone.png" />
+  </ItemGroup>
+</Project>
