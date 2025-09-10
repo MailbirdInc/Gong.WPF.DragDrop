@@ -7,20 +7,6 @@
     <UseWPF>true</UseWPF>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>bin\Debug\NET4\</OutputPath>
-    <IntermediateOutputPath>obj\Debug\NET4\</IntermediateOutputPath>
-    <DocumentationFile>bin\Debug\NET4\GongSolutions.Wpf.DragDrop.XML</DocumentationFile>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>gong-wpf-dragdrop.pfx</AssemblyOriginatorKeyFile>
-    <OutputPath>bin\Release\NET4\</OutputPath>
-    <IntermediateOutputPath>obj\Release\NET4\</IntermediateOutputPath>
-    <DocumentationFile>bin\Release\NET4\GongSolutions.Wpf.DragDrop.XML</DocumentationFile>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Update="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
